@@ -1,0 +1,28 @@
+﻿<Page x:Class="CSSEC_Raffle.EventPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CSSEC_Raffle"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="675"
+      Title="EventPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="420" />
+            <RowDefinition Height="130" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*" />
+            <ColumnDefinition Width="6*" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lb_event" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="20" Grid.ColumnSpan="2" Background="#fffef8" FontSize="16" SelectionChanged="lb_event_SelectionChanged"/>
+
+        <TextBlock x:Name="tblk_event" Text="No Event Selected." HorizontalAlignment="Left" Margin="15,0,0,0" Grid.Row="1" VerticalAlignment="Center" FontSize="32" />
+        <Button x:Name="btn_event" Grid.Row="1" Grid.Column="1" Style="{DynamicResource MaterialDesignIconForegroundButton}" Click="btn_event_Click">
+            <Image Source="res/black play icon.png" Stretch="Fill" />
+        </Button>
+
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="CSSEC_Raffle.RaffleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSSEC_Raffle"
+        mc:Ignorable="d"
+        Title="RaffleWindow" Height="1080" Width="1920" WindowState="Maximized" OpacityMask="#E5000000" AllowsTransparency="True" WindowStyle="None" Background="#FF001D10">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="tblk_name" HorizontalAlignment="Center" TextWrapping="Wrap" Text="--------" VerticalAlignment="Bottom" TextAlignment="Center" FontSize="130" FontFamily="Source Code Pro" Foreground="#20c20e" Margin="20" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" >
+            <Button x:Name="btn_raffleStart" HorizontalAlignment="Center" Style="{DynamicResource MaterialDesignIconForegroundButton}" VerticalAlignment="Center" Margin="50" Click="btn_raffleStart_Click">
+                <Image Source="res/green play icon.png" />
+            </Button>
+            <Button x:Name="btn_exit" HorizontalAlignment="Center" Style="{DynamicResource MaterialDesignIconForegroundButton}" VerticalAlignment="Center" Margin="50" Click="btn_exit_Click">
+                <Image Source="res/green exit icon.png" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
